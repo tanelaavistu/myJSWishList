@@ -4,8 +4,9 @@ const filePath = path.join(path.dirname(require.main.filename), 'data', 'wishes.
 
 module.exports = class Wish {
 
-    constructor(wish){
+    constructor(wish, imageUrl){
         this.description = wish;
+        this.imageUrl = imageUrl;
     }
 
     saveWish() {

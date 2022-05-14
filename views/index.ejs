@@ -11,8 +11,9 @@
     <div class="container">
         <h1>My Wishlist</h1>
 
-        <form action="/wish" method="POST">
+        <form action="/wish" method="POST" enctype="multipart/form-data">
             <input type="text" name="userWish" placeholder="Your wish">
+            <input type="file" name="userFile">
             <button type="submit">Add</button>
         </form>
 
